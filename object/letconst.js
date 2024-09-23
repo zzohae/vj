@@ -8,7 +8,6 @@ const family = {
 for(let x in family.familysite){
   // index
   console.log(x)
-  // console.log(family.familysite[x])
 }
 
 for(let x of family.familysite){
