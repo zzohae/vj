@@ -1,16 +1,26 @@
 const family = {
   d1text: "FAMILY SITE",
   familysite: [
-    "네이버", "구글", "다음", "유튜브"
+    {
+      atext: "네이버",
+      href: "https://www.naver.com"
+    },
+    {
+      atext: "구글",
+      href: "https://www.google.com/"
+    },
+    {
+      atext: "다음",
+      href: "https://www.daum.net/"
+    },
+    {
+      atext: "GIT",
+      href: "https://github.com/zzohae"
+    }
   ]
 }
 
-for(let x in family.familysite){
-  // index
-  console.log(x)
-}
+// console.log(family.familysite[0].atext, family.familysite[0].href)
 
-for(let x of family.familysite){
-  // value
-  console.log( x )
-}
+const mytag = `<a href=${family.familysite[1].href}>${family.familysite[1].atext}</a>`;
+console.log(mytag);
