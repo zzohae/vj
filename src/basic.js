@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
   let familylist = '';
 
   for ( x of family.familysite){
-    familylist += `<li>${x.atext}</li>`
+    familylist += `<li><a href="${x.href}" target="_blank">${x.atext}</a></li>`
   }
 
   this.document.querySelector("#family ul").innerHTML = familylist;

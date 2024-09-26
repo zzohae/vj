@@ -1,8 +1,13 @@
+/* 웹폰트 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
 /* 템플릿제작하기 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Pretendard Variable', sans-serif;
+  font-weight: 400;
 }
 
 html, body {
@@ -13,16 +18,21 @@ ol, ul, li {
   list-style: none
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 /* 하단 */
 #family {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: yellow;
+  background: pink;
 }
 
 #family h2 {
-  border: 1px solid blue;
+  /* border: 1px solid black; */
   padding: 0.5rem;
   
 }
@@ -32,12 +42,11 @@ ol, ul, li {
   /* bottom: 100%; margin-bottom: -1px; */
   bottom: calc(100% - 1px);
   left: 0; right: 0;
-  border: 1px solid red;
-  border-bottom: 0;
-  padding: 0 1rem;
+  /* border: 1px solid black; border-bottom: 0; */
   max-height: 0;
   overflow: hidden;
   transition: 0.5s;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 #family.open ul,
@@ -45,9 +54,16 @@ ol, ul, li {
   max-height: 300px;
 }
 
-#family ul:before ,
-#family ul:after  {
-  content: "";
-  display: block;
-  height: 15px;
+#family ul li {
+  padding: 0.5rem;
+}
+
+#family ul li a {
+  display: inline-block;
+  color: #333;
+  width: 100%;
+}
+
+#family ul li:hover {
+  background: rgba(238, 238, 238, 0.9);
 }
