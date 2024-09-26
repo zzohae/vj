@@ -7,6 +7,13 @@ window.addEventListener('load', function(){
   for ( x of family.familysite){
     familylist += `<li>${x.atext}</li>`
   }
-  
+
   this.document.querySelector("#family ul").innerHTML = familylist;
-})
+
+  // family 노출
+  this.document.querySelector("#family").
+  addEventListener('click', function(){
+    this.classList.toggle('open')
+  });
+
+});

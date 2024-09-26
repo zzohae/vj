@@ -1,3 +1,53 @@
 /* 템플릿제작하기 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+ol, ul, li {
+  list-style: none
+}
 
 /* 하단 */
+#family {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: yellow;
+}
+
+#family h2 {
+  border: 1px solid blue;
+  padding: 0.5rem;
+  
+}
+
+#family ul {
+  position: absolute;
+  /* bottom: 100%; margin-bottom: -1px; */
+  bottom: calc(100% - 1px);
+  left: 0; right: 0;
+  border: 1px solid red;
+  border-bottom: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#family.open ul,
+#family:hover ul {
+  max-height: 300px;
+}
+
+#family ul:before ,
+#family ul:after  {
+  content: "";
+  display: block;
+  height: 15px;
+}
