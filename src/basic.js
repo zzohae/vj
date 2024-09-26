@@ -2,11 +2,11 @@ window.addEventListener('load', function(){
   this.document.querySelector("#family h2").
   innerHTML = family.d1text;
 
-  const mylist = this.document.querySelectorAll("#family li");
-  
-  console.log(mylist, typeof mylist, Array.isArray(mylist) );
+  let familylist = '';
 
-  for ( x in family.familysite ){
-    mylist[x].innerHTML = family.familysite[x].atext;
+  for ( x of family.familysite){
+    familylist += `<li>${x.atext}</li>`
   }
+  
+  this.document.querySelector("#family ul").innerHTML = familylist;
 })
