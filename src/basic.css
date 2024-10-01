@@ -2,12 +2,16 @@
 #hd .inner h1 .logo:before {
   content: "svg로고";
 }
+#hd .inner #hd_allmenu_bby {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>');
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-repeat: none;
+}
 #hd .inner nav a {
   color: black;
   white-space: nowrap;
-}
-#hd .inner nav > ul > li:nth-child(2) > a {
-  padding: 0 3rem;
 }
 #hd .inner nav > ul > li:nth-child(2) .position-absolute {
   right: unset;
@@ -38,4 +42,34 @@
 #hd .inner nav > ul > li:hover .position-absolute {
   transition: 0.5s;
   max-height: 300px;
+}
+
+@media (max-width: 991px) {
+  #navi {
+    position: absolute;
+  }
+  #navi .position-absolute {
+    position: unset !important;
+  }
+}
+
+body.menuOpen:after {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body.menuOpen #hd #hd_allmenu_bby {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 1.5a.5.5 0 0 1 .707 0L8 7.293 14.793 1.5a.5.5 0 0 1 .707.707L8.707 8l6.793 6.793a.5.5 0 0 1-.707.707L8 8.707l-6.793 6.793a.5.5 0 0 1-.707-.707L7.293 8 1.5 1.5z"/></svg>');
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-repeat: none;
+}
+body.menuOpen #hd nav {
+  display: block !important;
 }
