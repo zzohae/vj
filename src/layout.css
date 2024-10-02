@@ -29,12 +29,12 @@ a {
   bottom: 2rem;
   right: 2rem;
   background: pink;
+  border-radius: 1rem;
 }
 
 #family h2 {
   /* border: 1px solid black; */
-  padding: 0.5rem;
-  
+  padding: 0.5rem;  
 }
 
 #family ul {

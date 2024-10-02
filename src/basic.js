@@ -22,4 +22,11 @@ window.addEventListener('load', function(){
     document.body.classList.toggle('menuOpen');
   })
 
+  //navi
+  for( x in mynavi ){
+    this.document.querySelectorAll("#navi > ul > li > a")[x].innerHTML = mynavi[x].title;
+    }
+  }
+  
+
 });
