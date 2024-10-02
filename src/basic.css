@@ -13,6 +13,25 @@
   color: black;
   white-space: nowrap;
 }
+#hd .inner nav > ul:hover .position-absolute {
+  height: 15rem;
+}
+#hd .inner nav > ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 0;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  transition: 0.5s;
+}
+#hd .inner nav > ul:hover:before {
+  height: 15rem;
+}
 #hd .inner nav > ul > li:nth-child(2) .position-absolute {
   right: unset;
 }
@@ -21,27 +40,22 @@
 }
 #hd .inner nav > ul > li > a {
   font-size: 1.5em;
-  padding: 0 1.5rem;
+  padding: 20px 1.5rem;
 }
 #hd .inner nav > ul > li .position-absolute {
   left: 0;
   right: 0;
   top: 100%;
   min-width: 100px;
-  max-height: 0;
+  height: 0;
+  transition: 0.5s;
   overflow: hidden;
 }
 #hd .inner nav > ul > li .position-absolute ul {
-  background-color: white;
   padding: 1rem;
-  border: 1px solid #ccc;
 }
 #hd .inner nav > ul > li:hover > a {
   color: orange;
-}
-#hd .inner nav > ul > li:hover .position-absolute {
-  transition: 0.5s;
-  max-height: 300px;
 }
 
 @media (max-width: 991px) {
