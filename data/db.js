@@ -77,3 +77,8 @@ const mynavi = [
       ]
   }
 ];
+
+//setTimeout
+const swiperBanner = [
+
+]

@@ -1,3 +1,9 @@
+.itemcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #hd {
   .inner {
     h1 {
@@ -134,6 +140,20 @@ body.menuOpen {
     }
     nav{
       display: block !important;
+    }
+  }
+}
+#mainBanner {
+  .swiper-slide{
+    background-color: #000;
+    color: white;
+    font-size: 100px;
+    opacity: 0.8;
+    transition: 0.5s;
+    &.swiper-slide-active{
+      opacity: 0.5;
+      font-size: 200px;
+      background-color: red;
     }
   }
 }

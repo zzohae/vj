@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.itemcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #hd .inner h1 .logo:before {
   content: "svg로고";
 }
@@ -86,4 +92,17 @@ body.menuOpen #hd #hd_allmenu_bby {
 }
 body.menuOpen #hd nav {
   display: block !important;
+}
+
+#mainBanner .swiper-slide {
+  background-color: #000;
+  color: white;
+  font-size: 100px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+#mainBanner .swiper-slide.swiper-slide-active {
+  opacity: 0.5;
+  font-size: 200px;
+  background-color: red;
 }
