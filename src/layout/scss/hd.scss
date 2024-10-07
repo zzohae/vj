@@ -137,3 +137,20 @@ body.menuOpen {
     }
   }
 }
+
+body.slide-0,
+body.slide-2 {
+  #hd{
+    a{
+      color: white !important;
+    }
+  }
+  #mainBanner{
+    .swiper-slide{
+      color: white !important;
+    }
+    .indicate{
+      color: white;
+    }
+  }
+}

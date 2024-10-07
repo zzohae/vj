@@ -1,0 +1,44 @@
+#family {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: pink;
+  border-radius: 1rem;
+
+  h2 {
+    // border: 1px solid black;
+    padding: 0.5rem;  
+  }
+
+  ul {
+    position: absolute;
+    bottom: calc(100% - 1px);
+    left: 0;
+    right: 0;
+    // border: 1px solid black; border-bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.6);
+
+    // 부모가 open 클래스가 있거나, hover 상태일 때 max-height 변경
+    #family.open &,
+    #family:hover & {
+      max-height: 300px;
+    }
+
+    li {
+      padding: 0.5rem;
+
+      a {
+        display: inline-block;
+        color: #333;
+        width: 100%;
+      }
+
+      &:hover {
+        background: rgba(238, 238, 238, 0.9);
+      }
+    }
+  }
+}

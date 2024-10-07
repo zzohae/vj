@@ -1,10 +1,4 @@
 @charset "UTF-8";
-.itemcenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #hd .inner h1 .logo:before {
   content: "svg로고";
 }
@@ -94,15 +88,15 @@ body.menuOpen #hd nav {
   display: block !important;
 }
 
-#mainBanner .swiper-slide {
-  background-color: #000;
-  color: white;
-  font-size: 100px;
-  opacity: 0.8;
-  transition: 0.5s;
+body.slide-0 #hd a,
+body.slide-2 #hd a {
+  color: white !important;
 }
-#mainBanner .swiper-slide.swiper-slide-active {
-  opacity: 0.5;
-  font-size: 200px;
-  background-color: red;
+body.slide-0 #mainBanner .swiper-slide,
+body.slide-2 #mainBanner .swiper-slide {
+  color: white !important;
+}
+body.slide-0 #mainBanner .indicate,
+body.slide-2 #mainBanner .indicate {
+  color: white;
 }

@@ -1,0 +1,35 @@
+/* 웹폰트 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+/* 템플릿제작하기 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard Variable', sans-serif;
+  font-weight: 400;
+}
+
+html, body {
+  height: 100%;
+}
+
+ol, ul, li {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 커스터마이징 공통 클래스 */
+.itemcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zup {
+  z-index: 100;
+}
