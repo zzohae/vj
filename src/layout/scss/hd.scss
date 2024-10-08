@@ -37,11 +37,11 @@
       >ul {
         &:hover {
           .position-absolute {
-            height: 15rem;
+            // height: 15rem;
           }
         }
         &:before{
-          content: "";
+          // content: "";
           display: block;
           position: absolute;
           left: 0; right: 0;
@@ -51,10 +51,10 @@
           border-top: 1px solid #ddd;
           border-bottom: 1px solid #ddd;
           transition: 0.5s;
-      }
-      &:hover:before{
-        height: 15rem;
-      }
+        }
+        &:hover:before{
+          height: 15rem;
+        }
       
         >li { //대메뉴 li
           &:nth-child(2) {
@@ -77,8 +77,8 @@
 
           //소메뉴
           .position-absolute {
-            left: 0; //start-0
-            right: 0; //end-0
+            left: 0;
+            right: 0;
             top: 100%; //top-100
             min-width: 100px;
             height: 0;
