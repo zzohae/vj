@@ -3,10 +3,13 @@
   bottom: 2rem;
   right: 2rem;
   background: pink;
-  border-radius: 1rem;
 }
 #family h2 {
+  border: 1px solid black;
   padding: 0.5rem;
+}
+#family.open ul {
+  max-height: 300px;
 }
 #family ul {
   position: absolute;
@@ -18,7 +21,7 @@
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.6);
 }
-#family.open #family ul, #family:hover #family ul {
+#family.open #family ul {
   max-height: 300px;
 }
 #family ul li {

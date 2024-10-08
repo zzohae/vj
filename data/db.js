@@ -23,7 +23,7 @@ const family = {
 const mynavi = [
   {
       title: "대메뉴1",
-      link: "#long-menu",
+      link: "#about",
       submenus: [
           { title: "소메뉴 1", link: "#submenu1" },
           { title: "소메뉴 2", link: "#submenu2" },
@@ -32,9 +32,8 @@ const mynavi = [
   },
   {
       title: "대메뉴2",
-      link: "#main-menu1",
+      link: "#portfolio",
       submenus: [
-          { title: "찾아오시는 길처럼 긴소메뉴", link: "#long-submenu" },
           { title: "소메뉴 1", link: "#submenu4" },
           { title: "소메뉴 2", link: "#submenu5" },
           { title: "소메뉴 3", link: "#submenu6" },
@@ -44,8 +43,8 @@ const mynavi = [
       ]
   },
   {
-      title: "대메뉴3",
-      link: "#main-menu2",
+      title: "연락처",
+      link: "#contact",
       submenus: [
           { title: "소메뉴 1", link: "#submenu10" },
           { title: "소메뉴 2", link: "#submenu11" },
@@ -56,7 +55,7 @@ const mynavi = [
   },
   {
       title: "대메뉴4",
-      link: "#main-menu3",
+      link: "#main-menu4",
       submenus: [
           { title: "소메뉴 1", link: "#submenu15" },
           { title: "소메뉴 2", link: "#submenu16" },
@@ -66,8 +65,8 @@ const mynavi = [
       ]
   },
   {
-      title: "대메뉴5",
-      link: "#main-menu4",
+      title: "네이버",
+      link: "https://www.naver.com/",
       submenus: [
           { title: "소메뉴 1", link: "#submenu20" },
           { title: "소메뉴 2", link: "#submenu21" },
