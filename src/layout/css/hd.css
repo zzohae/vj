@@ -96,3 +96,22 @@ body.slide-0 #mainBanner .indicate,
 body.slide-2 #mainBanner .indicate {
   color: white;
 }
+
+body #family {
+  transform: translateX(150%);
+  transition: 0.5s;
+}
+body #hd {
+  transition: 0.3s;
+}
+body.scrolldown #family {
+  transform: translateX(0);
+}
+body.scrolldown #hd {
+  background-color: #fff !important;
+  border-bottom: 1px solid #ddd;
+}
+body.scrolldown #hd a {
+  color: #333 !important;
+  padding: 10px 1rem !important;
+}

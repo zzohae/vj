@@ -154,3 +154,26 @@ body.slide-2 {
     }
   }
 }
+
+body {
+  #family {
+    transform: translateX(150%);
+    transition: 0.5s;
+  }
+  #hd {
+    transition: 0.3s;
+  }
+  &.scrolldown {
+    #family {
+      transform: translateX(0);
+    }
+    #hd {
+      background-color: #fff !important;
+      border-bottom: 1px solid #ddd;
+      a {
+        color: #333 !important;
+        padding: 10px 1rem !important;
+      }
+    }
+  }
+}
