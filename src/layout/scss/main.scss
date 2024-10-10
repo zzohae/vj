@@ -25,3 +25,37 @@
     box-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.3);
   }
 }
+
+#faqcontent {
+  dt {
+    position: relative;
+    cursor: pointer; // 클릭할 수 있다는 것을 나타내는 커서
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s;
+    }
+
+    &.expand {
+      color: red !important;
+
+      &:after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+      + dd {
+        display: block !important;
+      }
+    }
+  }
+}

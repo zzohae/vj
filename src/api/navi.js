@@ -34,4 +34,36 @@ window.addEventListener('load', function(){
   }
   navitarget.innerHTML = navitag;
 
+
+   //faq
+  let faqtag = "";
+  const faqtarget = this.document.querySelector("#faqcontent .content");
+
+  faqtag += `<dl class="container py-5">`;
+  for( x of faqcontent ){
+    faqtag += `<dt class=" py-4 border-bottom user-select-none">${x.faqQ}</dt>
+                  <dd class="py-4 d-none user-select-none">`;
+                  const faqcontentArr = x.faqA.split("|");
+                  for ( j of faqcontentArr ){
+                    faqtag += `<span class="d-block">${j}</span>`;
+                  }
+    faqtag += `</dd>`;
+  }
+  faqtag += `</dl>`;
+  
+  faqtarget.innerHTML = faqtag;
+
+  // 동적객체 = 이벤트에 저장하는 식 불가
+  const faqdts = document.querySelectorAll("#faqcontent .content dl dt");
+
+    faqdts.forEach(function(el) {
+        el.addEventListener('click', function() {
+            if (this.classList.contains('expand')) {
+                this.classList.remove('expand');
+            } else {
+                faqdts.forEach(item => item.classList.remove('expand'));
+                this.classList.add('expand');
+            }
+        });
+    });
 });

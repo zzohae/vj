@@ -31,8 +31,8 @@ const mynavi = [
       ]
   },
   {
-      title: "대메뉴2",
-      link: "#portfolio",
+      title: "사전인터뷰",
+      link: "#faqcontent",
       submenus: [
           { title: "소메뉴 1", link: "#submenu4" },
           { title: "소메뉴 2", link: "#submenu5" },
@@ -80,4 +80,19 @@ const mynavi = [
 //setTimeout
 const swiperBanner = [
 
+]
+
+const faqcontent = [
+  {
+    faqQ: "프론트엔드 과정을 훈련받으면서 가장 어려웠던 점은?",
+    faqA: "K 디지털훈련에서 팀프로젝트를 완수해야하는데 ~~"
+  },
+  {
+    faqQ: "훈련과정이 Chat GPT를 활용하는 타이틀인데 실무에 영향이...",
+    faqA: "답변,,,"
+  },
+  {
+    faqQ: "입사후 가능한 업무들",
+    faqA: "클라이언트와의 요구를 반영한 UI작업이 가능하며 | 컴포넌트 및 라이브러리를 적극활용하여 빠른 제작이 가능 | 디지털소스를 깃허브에 업로드해 공유하여 공동작업"
+  },
 ]
