@@ -41,7 +41,7 @@ window.addEventListener('load', function(){
 
   faqtag += `<dl class="container py-5">`;
   for( x of faqcontent ){
-    faqtag += `<dt class=" py-4 border-bottom user-select-none">${x.faqQ}</dt>
+    faqtag += `<dt class=" py-4 border-bottom user-select-none d-flex justify-content-between"> <span>${x.faqQ}</span> <i class="bi bi-chevron-down"></i></dt>
                   <dd class="py-4 d-none user-select-none">`;
                   const faqcontentArr = x.faqA.split("|");
                   for ( j of faqcontentArr ){
@@ -55,15 +55,18 @@ window.addEventListener('load', function(){
 
   // 동적객체 = 이벤트에 저장하는 식 불가
   const faqdts = document.querySelectorAll("#faqcontent .content dl dt");
+  //사전인터뷰 dt들 저장
+  //다수.forEach(function(element, index){})
 
-    faqdts.forEach(function(el) {
-        el.addEventListener('click', function() {
-            if (this.classList.contains('expand')) {
-                this.classList.remove('expand');
-            } else {
-                faqdts.forEach(item => item.classList.remove('expand'));
-                this.classList.add('expand');
-            }
+    faqdts.forEach((el, idx) => {
+      el.addEventListener('click',function(){
+        faqdts.forEach(function(sibling){
+          if( sibling == el ){
+            sibling.classList.toggle('expand');
+          }else{
+            sibling.classList.remove('expand');
+          }
         });
-    });
+      })
+    })
 });
